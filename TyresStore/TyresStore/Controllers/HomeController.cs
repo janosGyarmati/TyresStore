@@ -11,6 +11,7 @@ namespace TyresStore.Controllers
         public ActionResult Index()
         {
             string vehicle = "MyVehicle";
+            string vehicle2 = "MyVehicle2";
 
             return View();
         }
