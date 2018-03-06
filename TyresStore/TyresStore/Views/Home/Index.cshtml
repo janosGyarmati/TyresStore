@@ -1,53 +1,72 @@
 ﻿@model IList<TyresStore.Repository.Models.Vehicle>
 
 @{
-	ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
-@foreach (var vehicle in Model)
+@*@foreach (var vehicle in Model)
 {
-	<div>
-		@vehicle.Manufacturer
-	</div>
-	<div>
-		@vehicle.Model
-	</div>
-	<div>
-		@vehicle.Year
-	</div>
-	<div>
-		@vehicle.Color
-	</div>
-	<div>
-		@vehicle.ID
-	</div>
-	<hr />
-}
 
-<div class="jumbotron">
-	<h1>ASP.NET</h1>
-	<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-	<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <div>
+        @vehicle.Manufacturer
+    </div>
+    <div>
+        @vehicle.Model
+    </div>
+    <div>
+        @vehicle.Year
+    </div>
+    <div>
+        @vehicle.Color
+    </div>
+    <div>
+        @vehicle.ID
+    </div>
+    <hr />
+}*@
+<div>
+    <table class="table table-striped vehicles-table">
+        <thead>
+            <tr>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Id</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vehicle in Model)
+            {
+                <tr>
+                    <td> @vehicle.Manufacturer</td>
+                    <td>
+                        @vehicle.Model
+                    </td>
+                    <td>
+                        @vehicle.Year
+                    </td>
+                    <td>
+                        @vehicle.Color
+                    </td>
+                    <td>
+                        @vehicle.ID
+                    </td>
+                    <td class="button-select">
+                        <button type="button" class="btn btn-primary" onclick="mainModel.loadTyres(@vehicle.ID)">Select<i class="fas fa-plus"><span class="glyphicon glyphicon-share-alt"></span></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <div class="tyres-table">
+        <div class="header-table"><span class="tyres-title">Tyres</span></div>
+        <div class="table-content"></div>
+    </div>
+
 </div>
 
-<div class="row">
-	<div class="col-md-4">
-		<h2>Getting started</h2>
-		<p>
-			ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-			enables a clean separation of concerns and gives you full control over markup
-			for enjoyable, agile development.
-		</p>
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-		<h2>Get more libraries</h2>
-		<p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-		<h2>Web Hosting</h2>
-		<p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-		<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-	</div>
-</div>
+
+

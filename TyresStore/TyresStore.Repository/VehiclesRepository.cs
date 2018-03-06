@@ -22,6 +22,13 @@ namespace TyresStore.Repository
 		{
 			return context.Vehicles.ToList();
 		}
+
+		//public void RemoveVehicleById(int vehicleId)
+		//{
+		//	var vehicle = context.Vehicles.FirstOrDefault(x => x.ID == vehicleId);
+		//	context.Vehicles.Remove(vehicle);
+		//	context.SaveChanges();
+		//}
 	}
 
 }
