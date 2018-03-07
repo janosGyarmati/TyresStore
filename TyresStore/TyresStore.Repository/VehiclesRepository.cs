@@ -11,16 +11,18 @@ namespace TyresStore.Repository
 {
 	public class VehiclesRepository : IVehiclesRepository
 	{
-		TyresStoreContext context = new TyresStoreContext();
+		TyresStoreContext DbContext = new TyresStoreContext();
+
+        
 
 		public Vehicle GetVehicleById(int vehicleId)
 		{
-			return context.Vehicles.FirstOrDefault(x => x.ID == vehicleId);
+			return DbContext.Vehicles.FirstOrDefault(x => x.ID == vehicleId);
 		}
 
 		public List<Vehicle> GetVehicles()
 		{
-			return context.Vehicles.ToList();
+			return DbContext.Vehicles.ToList();
 		}
 
 		//public void RemoveVehicleById(int vehicleId)

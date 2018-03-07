@@ -24,48 +24,59 @@
     </div>
     <hr />
 }*@
-<div>
-    <table class="table table-striped vehicles-table">
-        <thead>
-            <tr>
-                <th>Manufacturer</th>
-                <th>Model</th>
-                <th>Year</th>
-                <th>Id</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var vehicle in Model)
-            {
-                <tr>
-                    <td> @vehicle.Manufacturer</td>
-                    <td>
-                        @vehicle.Model
-                    </td>
-                    <td>
-                        @vehicle.Year
-                    </td>
-                    <td>
-                        @vehicle.Color
-                    </td>
-                    <td>
-                        @vehicle.ID
-                    </td>
-                    <td class="button-select">
-                        <button type="button" class="btn btn-primary" onclick="mainModel.loadTyres(@vehicle.ID)">Select<i class="fas fa-plus"><span class="glyphicon glyphicon-share-alt"></span></i></button>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+<div class="row">
+    <div class="col-md-12">
+
+        <div>
+
+            <div class="vehicles-table">
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Manufacturer</th>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Id</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vehicle in Model)
+                    {
+                        <tr>
+                            <td> @vehicle.Manufacturer</td>
+                            <td>
+                                @vehicle.Model
+                            </td>
+                            <td>
+                                @vehicle.Year
+                            </td>
+                            <td>
+                                @vehicle.Color
+                            </td>
+                            <td>
+                                @vehicle.ID
+                            </td>
+                            <td class="button-select">
+                                <button type="button" class="btn btn-primary vehicleButton" onclick="mainModel.loadTyres(@vehicle.ID, this )">Select <i class="fa fa-plus"></i><span class="glyphicon glyphicon-share-alt"></span></button>
+                            </td>
+                        </tr>
+                }
+                    </tbody>
+                </table>
+
+            </div>@*.table-content*@
 
 
-    <div class="tyres-table">
-        <div class="header-table"><span class="tyres-title">Tyres</span></div>
-        <div class="table-content"></div>
-    </div>
-
+            <div class="tyres-table">
+                <div class="header-table"><h4 class="tyres-title">Tyres</h4></div>
+                <div class="table-content"></div>
+            </div>@*.tyres-table*@
+        
+        </div>@*.wraper*@
+   
+    </div>@*col-md-4*@
 </div>
 
 

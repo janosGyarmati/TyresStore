@@ -29,9 +29,9 @@ C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.xml
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csprojResolveAssemblyReference.cache
-C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.InitialCreate.resources
-C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.GenerateResource.Cache
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.CoreCompileInputs.cache
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.dll
 C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.pdb
+C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csprojResolveAssemblyReference.cache
+C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.Migrations.migration.resources
+C:\Users\janos\Documents\GitHub\TyresStore\TyresStore\TyresStore.Repository\obj\Debug\TyresStore.Repository.csproj.GenerateResource.Cache

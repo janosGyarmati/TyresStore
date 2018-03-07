@@ -20,6 +20,7 @@ namespace TyresStore
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/jquery.colorbox-min.js",
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/client/handlers.js",
                       "~/Scripts/client/MainModel.js",
@@ -28,7 +29,10 @@ namespace TyresStore
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/font-awesome.css",                
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/bootstrap-grid.min.css",
+                      "~/Content/font-awesome.css",
+                      "~/Content/colorbox.css",
                       "~/Content/site.css"
                       ));
         }

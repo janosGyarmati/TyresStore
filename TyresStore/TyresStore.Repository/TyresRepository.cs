@@ -11,20 +11,20 @@ namespace TyresStore.Repository
 {
 	public class TyresRepository : ITyresRepository
 	{
-		TyresStoreContext context = new TyresStoreContext();
+		TyresStoreContext DbContext = new TyresStoreContext();
 		public Tyre GetTyreById(int tyreId)
 		{
-			return context.Tyres.FirstOrDefault(x => x.ID == tyreId);
+			return DbContext.Tyres.FirstOrDefault(x => x.ID == tyreId);
 		}
 
 		public List<Tyre> GetTyres()
 		{
-			return context.Tyres.ToList();
+			return DbContext.Tyres.ToList();
 		}
 
 		public List<Tyre> GetTyresByVehicleId(int vehicleId)
 		{
-			return context.Tyres.Where(t => t.VehicleId == vehicleId).ToList();
+			return DbContext.Tyres.Where(t => t.VehicleId == vehicleId).ToList();
 		}
 	}
 
