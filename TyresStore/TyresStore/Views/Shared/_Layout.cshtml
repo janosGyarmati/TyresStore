@@ -8,13 +8,25 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="header clearfix">
-        <div class="shopping-cart" onclick="basketModel.getBasketHtml()">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                
+                <div class="header clearfix">
+                    <div class="shopping-cart" onclick="basketModel.getBasketHtml()">
 
-            <div class="glyphicon glyphicon-shopping-cart cart-button">  (0) </div>
+                        <div class="glyphicon glyphicon-shopping-cart cart-button">  (0) </div>
 
-        </div>
-    </div>
+                    </div>@*.shopping-cart*@
+                </div>@*.header*@
+
+                <div class="text-center">
+                    <h2>Vehicles</h2>
+                </div>
+
+            </div>@*col-sm-12*@
+        </div>@*row*@
+    </div>@*.container*@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>*@
-                @Html.ActionLink("Vehicles", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @*@Html.ActionLink("Vehicles", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

@@ -50,9 +50,9 @@
     <Compile Include="Interfaces\IBasketRepository.cs" />
     <Compile Include="Interfaces\ITyresRepository.cs" />
     <Compile Include="Interfaces\IVehiclesRepository.cs" />
-    <Compile Include="Migrations\201803071050409_migration.cs" />
-    <Compile Include="Migrations\201803071050409_migration.Designer.cs">
-      <DependentUpon>201803071050409_migration.cs</DependentUpon>
+    <Compile Include="Migrations\201803081020333_InitialCreate.cs" />
+    <Compile Include="Migrations\201803081020333_InitialCreate.Designer.cs">
+      <DependentUpon>201803081020333_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Basket.cs" />
@@ -165,8 +165,8 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803071050409_migration.resx">
-      <DependentUpon>201803071050409_migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803081020333_InitialCreate.resx">
+      <DependentUpon>201803081020333_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -37,8 +37,9 @@
                             <th>Manufacturer</th>
                             <th>Model</th>
                             <th>Year</th>
+                            <th>Color</th>
                             <th>Id</th>
-                            <th></th>
+                            <th>Select Tyres</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +60,7 @@
                                 @vehicle.ID
                             </td>
                             <td class="button-select">
-                                <button type="button" class="btn btn-primary vehicleButton" onclick="mainModel.loadTyres(@vehicle.ID, this )">Select <i class="fa fa-plus"></i><span class="glyphicon glyphicon-share-alt"></span></button>
+                                <button type="button" class="btn btn-primary vehicleButton" onclick="mainModel.loadTyres(@vehicle.ID, this )">Select <i class="fa fa-angle-right"></i><span class="glyphicon glyphicon-share-alt"></span></button>
                             </td>
                         </tr>
                 }
@@ -70,7 +71,6 @@
 
 
             <div class="tyres-table">
-                <div class="header-table"><h4 class="tyres-title">Tyres</h4></div>
                 <div class="table-content"></div>
             </div>@*.tyres-table*@
         
@@ -78,6 +78,8 @@
    
     </div>@*col-md-4*@
 </div>
+
+
 
 
 

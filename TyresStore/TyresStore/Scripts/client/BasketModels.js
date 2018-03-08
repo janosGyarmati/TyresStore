@@ -44,6 +44,10 @@
                         iframe: false,
                         width: "70%",
                         height: "80%",
+                        onComplete: function () {
+                            $('html').css("overflow", "hidden");
+                        },
+
                     });
                 }
             }

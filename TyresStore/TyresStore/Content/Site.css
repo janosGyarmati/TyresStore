@@ -96,3 +96,7 @@ i {
     align-items: center;
     cursor:pointer;
 }
+
+.hided {
+    display: none;
+}
